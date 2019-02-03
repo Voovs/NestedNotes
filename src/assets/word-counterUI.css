@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
+@font-face {
+  font-family: Declarative;
+  src: url('../assets/Fonts/YT_font.ttf');
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+@font-face {
+  font-family: Menlo;
+  src: url('../assets/Fonts/Menlo.ttf');
+}
+@font-face {
+  font-family: GT Walsheim;
+  src: url('../assets/Fonts/GT-Walsheim-Pro-Trial-Condensed-Medium.ttf');
+}
+@font-face {
+  font-family: Super display;
+  src: url('../assets/Fonts/GT-Super-Display-Trial-Bold.ttf');
+}
+
+/* General styles */
+.page{
+  background-color: white;
+
+  /* Flex styles */
+  display: flex;
+  flex-direction: column;
+}
+.inputArea{
+  font-family: super display;
+  font-size: 60px;
+  background-color: #555151;
+  color: #ecf4f3
+}
+.pageTitle{
+  font-family: super display;
+  color: #555151;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  text-decoration: none;
+}
+.trial2{
+  font-family: Declarative
+}

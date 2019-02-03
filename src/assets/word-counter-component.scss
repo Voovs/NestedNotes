@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700');
+@font-face {
+  font-family: Declarative;
+  src: url('../assets/Fonts/YT_font.ttf');
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+@font-face {
+  font-family: Menlo;
+  src: url('../assets/Fonts/Menlo.ttf');
+}
+@font-face {
+  font-family: GT Walsheim;
+  src: url('../assets/Fonts/GT-Walsheim-Pro-Trial-Condensed-Medium.ttf');
+}
+@font-face {
+  font-family: Super display;
+  src: url('../assets/Fonts/GT-Super-Display-Trial-Bold.ttf');
+}
+
+/* General styles */
+.main-div{
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-left: 0;
+  font-family: Declarative;
+  font-size: 22px;
+  letter-spacing: 1px;
+  background-color: white;
+}
+.trial{
+  color: black;
+}
+
+/* Top words styles */
+.topWords{
+
+  /* Flex styles */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex: auto;
+  align-items: stretch;
+  & > div{
+    border: 2px solid #555151;
+    border-radius: 20px;
+  }
+}
+.topList{
+  color: #555151;
+  font-size: 30px;
+  .innerTopList{
+    padding: 10px 15px;
+    & > div > span{
+      padding-right: 10px;
+    }
+    & > div > a{
+      color: #57a99a;
+      float: right;
+    }
+  }
+}
+
+/* Search styles */
+.search{
+  padding-top: 15px
+}
+.searchArea{
+  margin:auto;
+  display:block;
+  font-size: 60px;
+  font-family: super display;
+  background-color: #555151;
+  color: #ecf4f3;
+  resize: none;
+  overflow: hidden;
+}
+.displaySearch{
+  color: black;
+}
+
+/* Card set styles */
+.cardset{
+  width: 95%;
+  padding: 0 2.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.wordCard{
+  color: black;
+  //border: 3px solid #555151;
+  border-radius: 7px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: rgba(0,0,0,0.4) 0 2px 10px;
+  font-size: 25px;
+  font-family: Ubuntu Mono;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+}
+.wordOnWordCard{
+  font-size: 35px;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: underline;
+  text-decoration-color: #57a99a;
+  font-family: Declarative;
+  cursor: default;
+}
+.numerical{
+  //padding-left: 40px;
+  align-self: flex-start;
+  padding-left: 40px;
+  cursor: default;
+}
+.wordCard hr{
+  width: 100%;
+  border: .5px solid rgba(0,0,0,.2);
+  margin: 0;
+  margin-top: 15px;
+}
+.wordCard a{
+  cursor: pointer;
+  color: #57a99a;
+  text-align: center;
+  padding-bottom: 6px;
+  padding-top: 3px;
+  text-decoration: none;
+
+  &:hover{
+    background-color: rgba(87,169,154, .1)
+  }
+}
+.wordCard a span{
+  font-family: monospace;
+  letter-spacing: 0;
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800');
+@font-face {
+  font-family: Declarative;
+  src: url('../assets/Fonts/YT_font.ttf');
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+@font-face {
+  font-family: Menlo;
+  src: url('../assets/Fonts/Menlo.ttf');
+}
+@font-face {
+  font-family: GT Walsheim;
+  src: url('../assets/Fonts/GT-Walsheim-Pro-Trial-Condensed-Medium.ttf');
+}
+@font-face {
+  font-family: Super display;
+  src: url('../assets/Fonts/GT-Super-Display-Trial-Bold.ttf');
+}
+
+/* General styles */
+.page{
+  display: block;
+  background-color: white;
+}
+
+.circle{
+  cx: 50;
+  cy: 50;
+  r: 40;
+  fill: grey;
+}
+.svg{
+    transition-property: transform, opacity;
+    transition-duration: 1s, .3s;
+    transition-timing-function: cubic-bezier(0.3, 0.68, 0.51, 0.97), ease;
+    display: block;
+    transform: translateY(20px);
+    opacity: .2;
+    color: black;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+.moveSvg{
+  opacity: 1;
+  transform: translateY(0px);
+}
