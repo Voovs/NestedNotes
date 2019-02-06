@@ -96,6 +96,7 @@
       </div>
     </div>
     <div class="total-words">Total words: {{ allWordsArray.length }}</div>
+    <hr class="media-line">
   </div>
 </template>
 
@@ -403,6 +404,45 @@ export default {
     align-self: center
     justify-self: center
     // No syntax support from Atom, yet above works
+@media (max-width: 1050px)
+  .main-div
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto 33vh auto 75px 40px 1px 1fr
+    height: 130vh
+    width: 96vw
+    overflow: hidden
+    padding: 0 2vw
+    .page-title
+      grid-area: 1 / 1 / 2 / 3
+      width: 100%
+    #light-toggle
+      position: absolute
+      left: calc(99vw - 100px)
+      top: 8px
+    .input-area
+      grid-area: 2 / 1 / 3 / 3
+    .total-words
+      grid-area: 3 / 1 / 4 / 3
+    .top-words-title
+      grid-area: 4 / 1 / 5 / 2
+    .search-area
+      grid-area: 4 / 2 / 5 / 3
+      white-space: nowrap
+      overflow-x: hidden
+      overflow-y: hidden
+    .top-list-setting
+      grid-area: 5 / 1 / 6 / 2
+    .user-settings
+      grid-area: 5 / 2 / 6 / 3
+    .media-line
+      grid-area: 6 / 1 / 7 / 3
+    .top-words
+      grid-area: 7 / 1 / 8 / 2
+    .search-list
+      grid-area: 7 / 2 / 8 / 3
+
+
 
 /* Static aesthetic styles */
 .main-div
@@ -410,6 +450,8 @@ export default {
   transition-timing-function: ease-in-out
   .search-area
     padding-left: 10px
+  .media-line
+    visibility: collapse
 .main-div-light
   transition: 300ms
   transition-timing-function: ease-in-out
@@ -460,6 +502,8 @@ export default {
       margin-right: 1.5vw
       // border-right: .3vw solid rgba(255, 255, 255, .4)
     .words
+  .media-line
+    border-color: black
 .main-div-dark
   transition: 300ms
   transition-timing-function: ease-in-out
@@ -512,6 +556,22 @@ export default {
       margin-right: 1.5vw
       // border-right: .3vw solid rgba(255, 255, 255, .4)
     .words
+  .media-line
+    border-color: white
+@media (max-width: 1050px)
+  .main-div
+    .media-line
+      visibility: visible
+      width: 100%
+      margin: 0
+    .user-settings
+      .line
+        visibility: collapse
+    .top-list-setting
+      .line
+        visibility: collapse
+    .total-words
+      margin: 2vh 0
 
 /* Text styles */
 .main-div
@@ -620,6 +680,17 @@ export default {
       font-size: 3vw
   .total-words
     color: #ecf4f3
+@media (max-width: 1050px)
+  .main-div
+    .page-title
+      font-size: 11vw
+    .top-words-title
+      text-align: center
+    .top-list-setting
+      margin: auto
+    .total-words
+      font-size: 10vw
+      line-height: .8
 
 /* Pseudo styles */
 .main-div
